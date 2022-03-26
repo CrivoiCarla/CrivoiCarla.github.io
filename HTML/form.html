@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Formular</title>
+  <link rel="stylesheet" type="text/css" href ="styleform.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+<div style="display:inline-block;vertical-align:top;">
+  
+<h2>Vrem sa iti aflam parerea !</h2>
+
+<form>
+  <label for="fname">Titlu carte:</label><br>
+  <input type="text" id="fname" name="fname" value="Portretul lui Dorian Grey"><br><br>
+  <label for="lname">Autor:</label><br>
+  <input type="text" id="lname" name="lname" value="Dorian Grey">
+</form>
+
+<p>Ai citit cartea ? </p>
+
+<form>
+  <input type="radio" id="CititCarteaDa" name="Carte" value="Da">
+  <label for="CititCarteaDa">Da</label><br>
+  <input type="radio" id="CititCarteaNu" name="Carte" value="Nu">
+  <label for="CititCarteaNu">Nu</label>
+</form> 
+
+<p>Va doriti sa cititi cartea?</p>
+<form>
+  <input type="radio" id="DA1" name="Vrea" value="Da, abia astept sa o cumpar">
+  <label for="DA1"> Da, abia astept sa o cumpar</label><br>
+  <input type="radio" id="DA2" name="Vrea" value="Da, dar am mai citit-o">
+  <label for="DA2"> Da, dar am mai citit-o</label><br>
+  <input type="radio" id="NU" name="Vrea" value="Nu, nu ma atrage">
+  <label for="NU"> Nu, nu ma atrage</label><br><br>
+</form>
+
+<p>Ce impresie v-a lasat rezumatul?</p>
+<form>
+  <input type="checkbox" id="DaPlacut" name="DaPlacut" value="Mi-a placut">
+  <label for="DaPlacut"> Mi-a placut</label><br>
+  <input type="checkbox" id="MulteDet" name="MulteDet1" value="multe detalii">
+  <label for="MulteDet"> Au fost prea multe detalii</label><br>
+  <input type="checkbox" id="PutineDet" name="PutineDet" value="Putine detalii">
+  <label for="PutineDet"> Au fost pre putine deatlii</label><br>
+  <input type="checkbox" id="PersInt" name="PersInt" value="PersInteresante">
+  <label for="PersInt"> Personajele par interesante</label><br>
+  <input type="checkbox" id="Curios" name="Curios" value="Curios">
+  <label for="Curios"> M-a facut curios</label><br>
+  <input type="checkbox" id="NuPlacut" name="NuPlacut" value="NuPlacut">
+  <label for="NuPlacut"> Nu mi-a placut</label><br><br>
+</form>
+
+<form action="start.html">
+  <label for="feedback">Ce ati dori sa imbunatatim? </label><br>
+  <input type="text" id ="feedback" name ="feedback" value="">
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Apasa <a href="p1.html">aici</a> pentru a te intoarce la pagina anterioara.</p>
+</div>
+<div style="display:inline-block;"><img src="carti.gif" alt="Carti rasfoite" ></div>
+</body>
+</html>

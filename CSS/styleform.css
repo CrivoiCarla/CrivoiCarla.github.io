@@ -1,0 +1,17 @@
+a:link, a:visited {
+    background-color: lightgoldenrodyellow;
+    color: rgba(221, 23, 62, 0.658);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+body{
+    background-color: aquamarine;
+    color: darkblue;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+div{
+    margin: 50px;
+}
