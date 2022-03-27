@@ -221,7 +221,7 @@ color: white;
   div.content{
     display: grid;
     padding: 2% 1rem ;
-    grid-column: 40% 60%;
+    grid-template-columns: 40% 60%;
     font-size:small;
   }
   .content1{
