@@ -1,0 +1,221 @@
+body {
+  background-color: black;
+  color: rgb(0, 255, 0);
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #333;
+  border-bottom: 3px solid yellowgreen;
+  width: 100%;
+  min-height: 48px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(0, 255, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 255, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 255, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.sticky {
+	position: sticky;
+	top: 0;
+}
+/* Navbar end */
+
+
+/* Content */
+.fade-in-text {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  animation: fadeIn linear 7s;
+  
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+div.content{
+  display: grid;
+  padding: 2% 3rem 2% 3rem;
+  grid-template-columns: 20% 80%;
+}
+
+.left{
+  grid-column: 1;
+  text-align: justify;
+  margin: 10px 20px;
+}
+.text{
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgb(202, 202, 202);
+}
+.subtxt{
+  color: gray;
+}
+h2.tag{
+  color: white;
+}
+.tag{
+  display: flex;
+  flex-direction: row;
+}
+p.red{
+  margin: 2px 3px;
+  color: red;
+}
+p.blue{
+  margin: 2px 3px;
+  color: blue;
+}
+p.violet{
+  margin: 2px 3px;
+  color: violet;
+}
+p.orange{
+  margin: 2px 3px;
+  color: orange;
+}
+.main{
+  grid-column: 2;
+}
+div.post{
+  margin: 10px 40px;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    color: rgb(195, 0, 255);
+    text-align: justify;
+  }
+  
+  .navbar {
+  border-bottom: 2px solid rgb(195, 0, 255);
+  }
+  .navbar a {
+    color: rgb(195, 0, 255) ;
+  }
+  .dropdown .dropbtn{
+    color:rgb(195, 0, 255) ;
+  }
+  div.content{
+    display: grid;
+    padding: 2% 1rem ;
+    grid-column: 40% 60%;
+    font-size:small;
+  }
+  .tag1{
+    display: flex;
+    flex-direction: column;
+  }
+  h2{
+    font-size: medium;
+  }
+
+
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    color: blue;
+    text-align: justify;
+    width: 100vw;
+  }
+  .navbar {
+    border-bottom: 1px solid rgb(0, 136, 255);
+    }
+  .navbar a {
+      color: blue;
+    }
+  .dropdown .dropbtn{
+      color:blue ;
+    }
+  div.content{
+    display: flex;
+    padding: 2% 5%;
+    flex-direction: column;
+    font-size: smaller;
+  }
+  .left{
+    margin: 10px 40px;
+  }
+  .fade-in-text {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    
+  }
+  .tag{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+}

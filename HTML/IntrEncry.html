@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <TITLE> Hacker</TITLE>
+  <link rel="stylesheet" type="text/css" href="../CSS/styleItrEncry.css">
+</HEAD>
+
+<div class="navbar sticky">
+  <a href="./start.html">Start</a>
+  <a href="./p1.html">Introduction</a>
+  <a href="./p2.html">Blog</a>
+  <div class="dropdown">
+    <button class="dropbtn">Encryptor </button>
+    <div class="dropdown-content">
+      <a href="./IntrEncry.html">How Encryption Works</a>
+      <a href="./AlgEncry.html">Quiz</a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="content1">
+    <div class="post post1">
+      <h2>Encryption </h2>
+      <img src="../image/look.jpg" alt="look">
+    </div>
+    <div class="post post2">
+      <h2>Algorithm</h2>
+      <img src="../image/Encryption-Algorithms.jpg" alt="data encryption">
+    </div>
+    <div class="post post3">
+      <h2>Decryption</h2>
+      <img src="../image/decrypt.jpg" alt="decrypt">
+    </div>
+    <div class="post post4">
+      <h2>Key</h2>
+      <img src="../image/look2.jpg" alt="look2">
+    </div>
+  </div>
+  <div class="photo">
+    <h2>Symmetric VS Asymmetric Encryption</h2>
+        <img class="image1" src="../image/cryptok.png" alt="encryptm">
+        <img class="image2" src="../image/asymmetric-encryption.png" alt="encryptm">
+  </div>
+  <div class="sas">
+    <h2>Symmetric Key Systems</h2>
+    <p>In a symmetric key system, everyone accessing the data has the same key. Keys that encrypt and decrypt messages must also remain secret to ensure privacy. While it’s possible for this to work, securely distributing the keys to ensure proper controls are in place makes symmetric encryption impractical for widespread commercial use.</p>
+    <form>
+      <label for="key">Key</label>
+      <input type="text" id="key" name="key">
+      <label for="input">Input</label>
+      <input type="text" id="input" name="input">
+      <div class="row">
+        <input type="submit" value="Press for output">
+      </div>
+      </form>
+  </div>
+  <div class="sas">
+    <h2>Asymmetric Key Systems</h2>
+    <p>An asymmetric key system, also known as a public/private key system, uses two keys. One key remains secret—the private key—while the other key is made widely available to anyone who needs it. This key is called the public key. The private and public keys are mathematically tied together, so the corresponding private key can only decrypt that information encrypted using the public key.</p>
+    <form>
+      <label for="key">Public Key</label>
+      <input type="text" id="key1" name="key">
+      <label for="input">Input</label>
+      <input type="text" id="input1" name="input">
+      <div class="row">
+        <input type="submit" value="Press for output">
+      </div>
+    </form>
+  </div>
+</div>
+
+</BODY>
+
+</HTML>
